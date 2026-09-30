@@ -10,7 +10,7 @@ I turn business problems into useful software and workflows: figuring out what p
 
 A multi-tenant backend and operator console for real-estate investors: lead generation from public notices, market imports and inbound sites; follow-up in one CRM; an evidence-backed offer range from county public records; a photo-based property brief after the walk; buyers matched to what comes through. Python 3.11 / FastAPI / Pydantic on Cloud Run, Next.js 16 / React 19 / TypeScript on Vercel, Firestore with a staged PostgreSQL research schema, Gemini for extraction and photo analysis, keyless Vercel-OIDC-to-GCP identity.
 
-What I’d point a technical reader at, on request: closed Pydantic contracts that forbid person-identifying keys; a deterministic comp spine with a three-comp floor and printed confidence factors; offline-by-default tests with sockets fenced, run locally and as a GitHub Actions release gate on every pull request (about 5,500 passing across the backend, database and console); row-level security on every tenant table, proven with a synthetic concurrency corpus; a 480-ticket delivery history with approval envelopes and closeouts that state what is not claimed.
+What I’d point a technical reader at, on request: closed Pydantic contracts that forbid person-identifying keys; a deterministic comp spine with a three-comp floor and printed confidence factors; offline-by-default tests with sockets fenced, run locally and as a GitHub Actions release gate on every pull request (about 5,500 passing across the backend, database and console); row-level security on every tenant table, proven with a synthetic concurrency corpus; a delivery history of more than 460 shipped tickets with approval envelopes and closeouts that state what is not claimed.
 
 Built and operated by one person; the first tenant was a client engagement that has ended. No paying customers, no production PostgreSQL, no public deployment. The case study, with a recorded replay of the research console, is at [keystonecollective.io/projects/keystone-platform](https://keystonecollective.io/projects/keystone-platform). I can walk through the code on a screen share.
 
@@ -20,7 +20,7 @@ Built and operated by one person; the first tenant was a client engagement that 
 - **Three client websites, one CRM** — Next.js / React / TypeScript, audience-specific guidance with official-source links, GTM / Analytics / Meta Pixel events, handed off with documentation. The engagement has ended and the sites are offline; the code is private.
 - **Deal Hunter** — normalization, deduplication and cross-source matching of distress lists with deterministic buy-box ranking; 2,934 leads and 6,092 closed-sale records organized in the client’s Sheets workspace.
 - **Scout** — inbound email and photo intake to repair estimate, PDF brief and CRM record. Ran end to end in practice on well over the 17 photos in the documented test; accuracy was never measured as a percentage.
-- **Clinic digitization** — website, HubSpot CRM, online booking, telehealth setup and opt-in follow-up; an opt-in SMS campaign generated $6,000+ in booked appointments on its first send.
+- **Clinic digitization** — website, HubSpot CRM, online booking, telehealth setup and opt-in follow-up; an opt-in SMS campaign generated $6,000+ in booked appointments within its first week.
 
 ## How I work
 
