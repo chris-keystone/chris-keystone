@@ -1,33 +1,29 @@
-# Christopher O'Keefe
+# Christopher O’Keefe
 
-### AI Product Engineer · Automation, Integrations & Internal Tools
+### Applied AI · software · business workflows — St. Louis, remote
 
-I turn operational problems, fragmented data, and undocumented workflows into working software. My background in real-estate operations shapes how I build: start with the decision a person needs to make, then design the data, automation, and interface around it.
+I turn business problems into useful software and workflows: figuring out what people need, building and testing the solution, and explaining it so the people using it trust it. Most of my code is written with AI coding tools; the ticket contracts, verification gates and documentation around them are the part I own.
 
-## What I build with
+**Portfolio:** [keystonecollective.io](https://keystonecollective.io) · **LinkedIn:** [chrisokeefe-ai](https://linkedin.com/in/chrisokeefe-ai) · chris@keystonecollective.io
 
-- **Backend:** Python, FastAPI, Pydantic, async application code, REST APIs
-- **Frontend:** TypeScript, Next.js, React, Tailwind CSS
-- **Applied AI:** LLM tool calling, structured extraction, retry and budget controls, and multi-agent orchestration
-- **Integrations:** webhooks, OAuth and HMAC flows, Google Workspace APIs, CRM and communications platforms, and public-data source adapters
-- **Cloud and quality:** GCP Cloud Run, Cloud Build source deployments, Vercel, Docker, pytest, Vitest, Ruff, and mypy
+## Currently building — Keystone platform (private)
 
-## Selected work
+A multi-tenant backend and operator console for real-estate investors: lead generation from public notices, market imports and inbound sites; follow-up in one CRM; an evidence-backed offer range from county public records; a photo-based property brief after the walk; buyers matched to what comes through. Python 3.11 / FastAPI / Pydantic on Cloud Run, Next.js 16 / React 19 / TypeScript on Vercel, Firestore with a staged PostgreSQL research schema, Gemini for extraction and photo analysis, keyless Vercel-OIDC-to-GCP identity.
 
-### Keystone Platform — private
+What I’d point a technical reader at, on request: closed Pydantic contracts that forbid person-identifying keys; a deterministic comp spine with a three-comp floor and printed confidence factors; offline-by-default tests with sockets fenced, run locally and as a GitHub Actions release gate on every pull request (about 5,500 passing across the backend, database and console); row-level security on every tenant table, proven with a synthetic concurrency corpus; a 480-ticket delivery history with approval envelopes and closeouts that state what is not claimed.
 
-I designed and built a private, multi-tenant real-estate intelligence and operator platform. It combines public-record ingestion, property research, valuation support, lead workflows, strict API and persistence contracts, tenant isolation, and applied LLM pipelines.
+Built and operated by one person; the first tenant was a client engagement that has ended. No paying customers, no production PostgreSQL, no public deployment. The case study, with a recorded replay of the research console, is at [keystonecollective.io/projects/keystone-platform](https://keystonecollective.io/projects/keystone-platform). I can walk through the code on a screen share.
 
-The production code is private because it contains business logic and client-adjacent integrations. I can walk through selected architecture, tests, and sanitized code during an interview.
+## Delivered work
+
+- **Public-notice pipeline** (paid engagement): notices → LLM extraction into validated schemas → property enrichment → explicit rules and human review → same-day alerts; 30+ qualified leads a month from the notice stream the client chose.
+- **Three client websites, one CRM** — Next.js / React / TypeScript, audience-specific guidance with official-source links, GTM / Analytics / Meta Pixel events, handed off with documentation. The engagement has ended and the sites are offline; one archived codebase is public at [`keystonecollective/restorestl-web`](https://github.com/keystonecollective/restorestl-web).
+- **Deal Hunter** — normalization, deduplication and cross-source matching of distress lists with deterministic buy-box ranking; 2,934 leads and 6,092 closed-sale records organized in the client’s Sheets workspace.
+- **Scout** — inbound email and photo intake to repair estimate, PDF brief and CRM record. Ran end to end in practice on well over the 17 photos in the documented test; accuracy was never measured as a percentage.
+- **Clinic digitization** — website, HubSpot CRM, online booking, telehealth setup and opt-in follow-up; an opt-in SMS campaign generated $6,000+ in booked appointments on its first send.
 
 ## How I work
 
-I use AI coding agents as a force multiplier. I define requirements and constraints, direct implementation, review the diffs, test behavior, and own the result—including the mistakes. I value explicit contracts, failure-state design, adversarial tests, and documentation that preserves why a system works the way it does.
+Tickets as contracts: scope lock, approval envelope, and a closeout that says what shipped and what is not claimed. Context engineering for AI-assisted delivery: durable orientation files with pointers, replaceable snapshots, agent-harness constraints, a do-not-claim file that overrides everything, and checks that surface drift. Notes on both at [keystonecollective.io/notes](https://keystonecollective.io/notes).
 
-## Current learning
-
-I am adding a PostgreSQL project lane focused on relational modeling, migrations, constraints, transactions, concurrency, and query plans. PostgreSQL is active study, not yet a production-experience claim.
-
-## Connect
-
-[LinkedIn](https://linkedin.com/in/chrisokeefe-ai)
+Open to remote roles in applied AI, AI implementation and product engineering.
