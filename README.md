@@ -20,14 +20,6 @@ I designed and built a private, multi-tenant real-estate intelligence and operat
 
 The production code is private because it contains business logic and client-adjacent integrations. I can walk through selected architecture, tests, and sanitized code during an interview.
 
-### Client web products
-
-- [Restore STL](https://restorestl.com)
-- [Stop Foreclosure STL](https://stopforeclosurestl.com)
-- [Probate Help STL](https://probatehelpstl.com)
-
-These were hand-built with Next.js, React, TypeScript, and Tailwind and include technical SEO, structured metadata, and accessible interaction patterns.
-
 ## How I work
 
 I use AI coding agents as a force multiplier. I define requirements and constraints, direct implementation, review the diffs, test behavior, and own the result—including the mistakes. I value explicit contracts, failure-state design, adversarial tests, and documentation that preserves why a system works the way it does.
