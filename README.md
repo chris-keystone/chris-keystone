@@ -17,7 +17,7 @@ Built and operated by one person; the first tenant was a client engagement that 
 ## Delivered work
 
 - **Public-notice pipeline** (paid engagement): notices → LLM extraction into validated schemas → property enrichment → explicit rules and human review → same-day alerts; 30+ qualified leads a month from the notice stream the client chose.
-- **Three client websites, one CRM** — Next.js / React / TypeScript, audience-specific guidance with official-source links, GTM / Analytics / Meta Pixel events, handed off with documentation. The engagement has ended and the sites are offline; one archived codebase is public at [`keystonecollective/restorestl-web`](https://github.com/keystonecollective/restorestl-web).
+- **Three client websites, one CRM** — Next.js / React / TypeScript, audience-specific guidance with official-source links, GTM / Analytics / Meta Pixel events, handed off with documentation. The engagement has ended and the sites are offline; the code is private.
 - **Deal Hunter** — normalization, deduplication and cross-source matching of distress lists with deterministic buy-box ranking; 2,934 leads and 6,092 closed-sale records organized in the client’s Sheets workspace.
 - **Scout** — inbound email and photo intake to repair estimate, PDF brief and CRM record. Ran end to end in practice on well over the 17 photos in the documented test; accuracy was never measured as a percentage.
 - **Clinic digitization** — website, HubSpot CRM, online booking, telehealth setup and opt-in follow-up; an opt-in SMS campaign generated $6,000+ in booked appointments on its first send.
